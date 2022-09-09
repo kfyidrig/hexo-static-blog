@@ -11,7 +11,7 @@
 
 # Allow to cache content generation.
 cache:
-  enable: false
+  enable: true
 
 # Remove unnecessary files after hexo generate.
 minify: true
@@ -38,8 +38,8 @@ custom_file_path:
 # Schemes
 #scheme: Muse
 #scheme: Mist
-scheme: Pisces
-#scheme: Gemini
+#scheme: Pisces
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -65,7 +65,7 @@ creative_commons:
   # Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
   license: by-nc-sa
   # Available values: big | small
-  size: small
+  size: big
   sidebar: true
   post: false
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
@@ -94,7 +94,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: true
+  badges: false
 
 
 # ---------------------------------------------------------------
@@ -127,7 +127,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: https://s-cd-920-oss-assets.oss.dogecdn.com/me.jpg
+  url: /uploads/avatar.jpg
   # If true, the avatar will be dispalyed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
@@ -141,8 +141,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/kfyidrig || fab fa-github
-  E-Mail: mailto:liucan@ieleven.xyz || fa fa-envelope
+  GitHub: https://github.com/liucan233 || fab fa-github
+  E-Mail: mailto:liucan2333@qq.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -342,8 +342,10 @@ text_align:
 # Reduce padding / margin indents on devices with narrow width.
 mobile_layout_economy: false
 
-# Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
-android_chrome_color: "#fff"
+# Header panel color ($brand-bg / $headband-bg => $black-deep).
+theme_color:
+  light: "#222"
+  dark: "#222"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -357,7 +359,7 @@ codeblock:
   # All available themes: https://theme-next.js.org/highlight/
   theme:
     light: default
-    dark: tomorrow-night
+    dark: default
   prism:
     light: prism
     dark: prism-dark
@@ -397,8 +399,8 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: true
-  permalink: https://github.com/kfyidrig
-  title: Follow me on GitHub
+  permalink: https://github.com/liucan233
+  title: 查看
 
 
 # ---------------------------------------------------------------
@@ -843,7 +845,7 @@ nprogress:
 # Canvas ribbon
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
@@ -865,7 +867,7 @@ vendors:
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: jsdelivr
+  plugins: unpkg
 
   # In the following settings, you can specify the CDN link for each plugin.
   # If left blank, the default CDN provider set by `plugins` option will be used.

@@ -5,7 +5,7 @@
 # Site
 title: 努力する全栈
 subtitle: '世上无难事，只要肯放弃'
-description: '博主LC，热爱前端，普通本科学生，算法菜狗😆，只参加过学院赛和CCF等，但爱学习算法，确确实实不会UI设计（到底要不要学UI设计呢🙃），喜欢下象棋（从没跟老爷爷下过，跃跃欲试），熟悉CSS，熟悉JS（es6更多一点😁），熟练使用react框架（源码还没学习）。目前在做：老师的项目&自己的前端小项目&互联网+等。'
+description: '博主LC，热爱前端，算法菜狗😆，不会UI设计（到底要不要学UI设计呢🙃），喜欢下象棋（从没跟老爷爷下过，跃跃欲试）。'
 keywords: 前端, 博客
 author: 刘灿
 language: zh-CN
@@ -59,9 +59,6 @@ highlight:
   hljs: false
 prismjs:
   enable: false
-  preprocess: true
-  line_number: true
-  tab_replace: ''
 # mark
 marked:
   prependRoot: true
@@ -115,6 +112,6 @@ deploy:
   type: sftp
   host: 42.193.22.104
   user: liucan
-  remotePath: /home/liucan/webstorm/hexo-static-blog
+  remotePath: /home/liucan/frontProjects/hexo-static-blog
   port: 22
   privateKey: ./private.key
